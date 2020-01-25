@@ -1,15 +1,68 @@
 <!DOCTYPE html>
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<body>
+<head>
+<title>Motivate Yourself</title>
+<style>
+#smalldiv{
+	width: 440px;
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+	background-color: #FFFFFF;
+}
 
-<div ng-app="">
- 
-<p>AnguarJS</p>
-<p>Say hello to <input type="text" ng-model="name"></p>
-<p ng-bind="name"></p>
+body {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: Coral;
+}
 
-</div>
+textarea {
+	width:450px;
+}
 
-</body>
-</html>
+.fixed-header, .fixed-footer{
+	width: 100%;
+	position: fixed;        
+	background: Crimson;     
+	text-align:center;	
+	color: Cornsilk;
+	font-family:courier,arial,helvetica;
+}
+
+.fixed-header{
+	top: 0;
+}
+
+.fixed-footer{
+	bottom: 0;
+}
+
+img{
+	margin: 10px;
+	height:600px
+    width:auto;/*maintain aspect ratio*/
+    max-width:400px;
+}
+
+</style>
+<script> 
+function printContent(){
+var i;
+var tex=""; 
+for (i = 0; i < 5; i++) {
+  tex += "<div id=smalldiv><img src=motivation/motivation-"+i+".jpg alt=motivation-"+i+".jpg></div></br>";
+}  
+document.getElementById("contentbox").innerHTML =tex;
+}
+</script> 
+</head>
+<body onload=printContent()>
+</br></br></br></br></br>
+ <div class="fixed-header"><h2>Motivate Yourself</h2></div>
+<div id=contentbox></div>
+ <div class="fixed-footer">Last Updated: 25/01/2020</div>
+ </br></br></br></br>
+ </body>
+</html> 
