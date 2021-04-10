@@ -18,8 +18,18 @@ body {
 	color:#000080;
 }
 
-textarea {
+.title {
+	font-family:courier,arial,helvetica;
+	font-size:20px;
 	width:450px;
+	padding: 15px 0px 0px 10px;
+}
+
+.detail, .summary {
+	font-family:courier,arial,helvetica;
+	font-size:18px;
+	width:450px;
+	padding: 0px 0px 0px 15px;
 }
 
 .fixed-header, .fixed-footer{
@@ -47,12 +57,22 @@ img{
     max-width:400px;
 }
 
+table tr td{
+	border:1px black solid;
+}
+
 </style>
+
+<script type="text/javascript" src="script.js"></script>
 </head>
-<body onload=printContent()>
-</br></br></br></br></br>
+<body>
+
  <div class="fixed-header">Motivation</div>
- <div class="fixed-footer">Last Updated: 04/2021</div>
- </br></br></br></br>
+
+<p class=title>Title : </p>
+<p class=summary>Summary :  </p>
+<p class=detail>Details : </p>
+ 
+ <div class="fixed-footer" id="pages"> </div>
  </body>
 </html> 
