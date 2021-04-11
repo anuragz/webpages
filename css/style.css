@@ -1,0 +1,81 @@
+#smalldiv{
+	width: 440px;
+	padding: 10px;
+	margin: auto;
+	background-color: #FFFFFF;
+}
+.topicbox {
+  padding: 1px;
+  margin: 1px;
+  background-color: white;
+  color: black;
+  border: 1px solid red; 
+  border-radius: 5px;
+  font-size:small;
+}
+
+body {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #f1f1f1;
+	color:#000080;
+	font-family:Serif;
+}
+
+.title {
+	font-family:Serif;
+	text-decoration: underline;
+	font-size:20px;
+	padding: 20px 0px 0px 10px;
+}
+.summary {
+	font-style: italic;
+}
+.detail, .summary {
+	font-family:Serif;
+	font-size:18px;
+	padding: 0px 0px 0px 10px;
+}
+
+.fixed-header, .fixed-footer{
+	width: 100%;
+	position: fixed;        
+	background: grey;     
+	text-align:left;
+	font-family:Serif;
+	font-weight: bold;
+	padding: 0px 0px 0px 10px;
+	color:white;
+}
+
+.fixed-header{
+	font-size:25px;
+	top: 0;
+}
+
+.fixed-footer{
+	bottom: 0;
+}
+
+img{
+	margin: 10px;
+	height:600px
+    width:auto;/*maintain aspect ratio*/
+    max-width:400px;
+}
+
+table tr td{
+	border:1px black solid;
+}
+
+.content{
+	width:90%;
+	margin:auto;
+	padding:2px;
+}
+
+li{
+	margin:auto;
+	padding:2px;
+}
