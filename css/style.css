@@ -50,11 +50,12 @@ body {
 }
 
 .fixed-header{
-	font-size:25px;
+	font-size:30px;
 	top: 0;
 }
 
 .fixed-footer{
+	font-size:20px;
 	bottom: 0;
 }
 
